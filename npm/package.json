@@ -1,5 +1,5 @@
 {
-  "name": "@arf/common-codegen-tests",
+  "name": "common-codegen-tests",
   "version": "2.2.3",
   "description": "Common tests that apply to all generated code, irrespective of language",
   "license": "Apache-2.0",
@@ -23,11 +23,11 @@
     "release": "standard-version"
   },
   "publishConfig": {
-    "registry": "https://npm-registry.whitewater.ibm.com"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.ibm.com:arf/common-codegen-tests"
+    "url": "git@github.com:ibm-developer/common-codegen-tests"
   },
   "keywords": [
     "arf",
@@ -40,6 +40,6 @@
   "contributors": [
     "Adam Pilkington",
     "Kate Stanley",
-    "Robert Deans"
+    "Christian Compton"
   ]
 }
