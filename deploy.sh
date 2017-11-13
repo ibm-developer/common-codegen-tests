@@ -11,9 +11,6 @@ if [[ $TRAVIS_BRANCH == "master"  ]]; then
     echo "This is a build on master, performing additional steps"
     if [[ $PKG_VER == $NPM_VER ]]; then
       echo "Version numbers match, so changing version and committing changes"
-      git config user.email "travisci@travis.ibm.com"
-      git config user.name "Travis CI"
-      git config push.default simple
       npm run prerelease
       if [ $? == 0 ]; then
         #If you are running a protected master branch then you *could* disable re-running the tests
@@ -30,7 +27,7 @@ if [[ $TRAVIS_BRANCH == "master"  ]]; then
       fi
     else
       echo "Version numbers don't match, so publishing to the registry"
-      npm publish --scope=arf
+      npm publish
     fi
   fi
 fi
