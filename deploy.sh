@@ -27,7 +27,7 @@ if [[ $TRAVIS_BRANCH == "master"  ]]; then
       fi
     else
       echo "Version numbers don't match, so publishing to the registry"
-      npm publish --scope=arf
+      npm publish
     fi
   fi
 fi
